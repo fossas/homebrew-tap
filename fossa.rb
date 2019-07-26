@@ -6,11 +6,11 @@ class Fossa < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cnr/fossa-cli/releases/download/v0.7.34/fossa-cli_0.7.34_darwin_amd64.tar.gz"
-    sha256 "d60603c1d27fbc3631b6d82fdb5334fe14fa48be351672e28307986d27899249"
+    url "https://github.com/fossas/fossa-cli/releases/v0.7.34/fossa-cli_0.7.34_darwin_amd64.tar.gz"
+    sha256 "a0ca052f4aff311f9b079d029043df08a59f625f029d59d775498effbff09449"
   elsif OS.linux?
-    url "https://github.com/cnr/fossa-cli/releases/download/v0.7.34/fossa-cli_0.7.34_linux_amd64.tar.gz"
-    sha256 "32bbc5e519877d0f13378e082581984629a7bbd920ae87547768ca718983999d"
+    url "https://github.com/fossas/fossa-cli/releases/v0.7.34/fossa-cli_0.7.34_linux_amd64.tar.gz"
+    sha256 "cadc924bedb7ff101a07b4ec1e725a3fbb69fc88f10e0162696e67fa528fc16b"
   end
 
   def install
