@@ -2,15 +2,17 @@
 class Fossa < Formula
   desc "Fast, portable and reliable dependency analysis for any codebase. Supports license & vulnerability scanning for large monoliths. Language-agnostic; integrates with 20+ build systems."
   homepage "https://fossa.com"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/fossas/fossa-cli/releases/download/v1.0.0/fossa-cli_1.0.0_darwin_amd64.tar.gz"
-    sha256 "851ce7ea0fc20e3b8c9d6c6ab04df4175ee47514a86052acfcdad0b2e17a29ee"
+    url "https://github.com/fossas/fossa-cli/releases/download/v1.0.1/fossa-cli_1.0.1_darwin_amd64.tar.gz"
+    sha256 "8cbee6595c81ad9ec595502ddbd9d9e2e6b3c4839ef42e4b87a1a5b5daed193d"
   elsif OS.linux?
-    url "https://github.com/fossas/fossa-cli/releases/download/v1.0.0/fossa-cli_1.0.0_linux_amd64.tar.gz"
-    sha256 "56e47d878fb5feff5172eacf06c02710495245d2e4703cb6109bed1e8df242f3"
+    if Hardware::CPU.intel?
+      url "https://github.com/fossas/fossa-cli/releases/download/v1.0.1/fossa-cli_1.0.1_linux_amd64.tar.gz"
+      sha256 "dfd767d8e847cb9432bd20e9fc5903d16d89738c618209b86c26321453d98927"
+    end
   end
 
   def install
