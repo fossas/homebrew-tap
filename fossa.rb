@@ -7,11 +7,11 @@ class Fossa < Formula
 
   if OS.mac?
     url "https://github.com/fossas/fossa-cli/releases/download/v1.0.1/fossa-cli_1.0.1_darwin_amd64.tar.gz"
-    sha256 "8cbee6595c81ad9ec595502ddbd9d9e2e6b3c4839ef42e4b87a1a5b5daed193d"
+    sha256 "93239c98ea66ed6f2772bf0512d6a579db94145e1cf6136e3a76ba65b1b3453b"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/fossas/fossa-cli/releases/download/v1.0.1/fossa-cli_1.0.1_linux_amd64.tar.gz"
-      sha256 "dfd767d8e847cb9432bd20e9fc5903d16d89738c618209b86c26321453d98927"
+      sha256 "ba3d57622b0cf3d55281d8ae63beadc783f3175cedda76bd17824e8a111ffdb6"
     end
   end
 
