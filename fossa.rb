@@ -5,23 +5,23 @@
 class Fossa < Formula
   desc "Fast, portable and reliable dependency analysis for any codebase. Supports license & vulnerability scanning for large monoliths. Language-agnostic; integrates with 20+ build systems."
   homepage "https://fossa.com"
-  version "1.1.3"
+  version "1.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.3/fossa-cli_1.1.3_darwin_amd64.tar.gz"
-    sha256 "65ad9dd73462b77d729aeabfa7ed4958f25ca87a495e4578b0a3c6d7412606e6"
+    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.4/fossa-cli_1.1.4_darwin_amd64.tar.gz"
+    sha256 "173cea7159650db219afe8424045cbdc754320d5d3ed7bc1d5cd396b89e4cec8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.3/fossa-cli_1.1.3_linux_amd64.tar.gz"
-    sha256 "90b888782d7101953dba6c8008cbf50b5351451d96d30c4e16a0278ff0b8569d"
+    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.4/fossa-cli_1.1.4_linux_amd64.tar.gz"
+    sha256 "34906d6870853e9f635a5f081fad636f7b840163e6ba15cb0d9caa121c4c7cdf"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.3/fossa-cli_1.1.3_linux_arm64.tar.gz"
-    sha256 "7b816a12c2c123b026ecc82acb8d2bd151b0ba723c9e2380bcb03c9732478a01"
+    url "https://github.com/fossas/fossa-cli/releases/download/v1.1.4/fossa-cli_1.1.4_linux_arm64.tar.gz"
+    sha256 "ffd8781ecbffd2f285927350560036bc535496afce8af55169512a2ea0bf7fe3"
   end
 
   def install
-    bin.install "fossa"
+    bin.install "fossa-cli"
   end
 end
