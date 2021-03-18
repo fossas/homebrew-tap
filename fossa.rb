@@ -22,6 +22,6 @@ class Fossa < Formula
   end
 
   def install
-    bin.install "fossa-cli"
+    bin.install "fossa"
   end
 end
